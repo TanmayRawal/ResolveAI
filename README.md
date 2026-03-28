@@ -2,7 +2,7 @@
 
 ![Hero Banner](docs/images/hero_banner.png)
 
-# ⚡ E-commerce Support Resolution Agent
+# ⚡ Agentic Resolve Ecom
 ### Production-Grade Multi-Agent RAG Pipeline for High-Impact Resolution
 
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)
