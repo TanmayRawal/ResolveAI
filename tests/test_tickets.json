@@ -1,0 +1,379 @@
+[
+  {
+    "ticket_id": "TKT-001",
+    "customer_name": "Sarah Johnson",
+    "customer_email": "sarah.j@email.com",
+    "customer_tier": "gold",
+    "ticket_text": "I received my laptop yesterday but the screen has a crack in the bottom-left corner. It was clearly damaged during shipping because the outer box was dented. I want a full refund immediately. This is a $899 laptop and I'm really frustrated.",
+    "order_context": {
+      "order_id": "ORD-2026-45678",
+      "order_date": "2026-03-20",
+      "delivery_date": "2026-03-27",
+      "items": [{"name": "ProBook X15 Laptop", "sku": "ELEC-LPT-001", "category": "electronics", "price": 899.00, "quantity": 1}],
+      "total_amount": 899.00,
+      "payment_method": "credit_card",
+      "shipping_method": "expedited",
+      "shipping_address_country": "US",
+      "shipping_address_state": "California",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-002",
+    "customer_name": "Michael Chen",
+    "customer_email": "m.chen@email.com",
+    "customer_tier": "platinum",
+    "ticket_text": "I ordered a set of kitchen knives 2 weeks ago and I'd like to return them. I opened the box and tried one knife but the quality isn't what I expected. The listing said 'professional grade' but these feel cheap. I want a full refund.",
+    "order_context": {
+      "order_id": "ORD-2026-45123",
+      "order_date": "2026-03-10",
+      "delivery_date": "2026-03-14",
+      "items": [{"name": "ChefPro 8-Piece Knife Set", "sku": "KIT-KNF-008", "category": "home_kitchen", "price": 129.99, "quantity": 1}],
+      "total_amount": 129.99,
+      "payment_method": "paypal",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "New York",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-003",
+    "customer_name": "Emily Rodriguez",
+    "customer_email": "emily.r@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "My order was supposed to arrive 3 days ago but tracking hasn't updated in over a week. The last scan was in Memphis, TN on March 20. I need this package — it's a birthday gift for my daughter. Can you help?",
+    "order_context": {
+      "order_id": "ORD-2026-43567",
+      "order_date": "2026-03-15",
+      "delivery_date": null,
+      "estimated_delivery": "2026-03-24",
+      "items": [{"name": "Sparkle Princess Dollhouse", "sku": "TOY-DLH-003", "category": "toys", "price": 89.99, "quantity": 1}, {"name": "Fairy Tale Book Collection", "sku": "BOK-FTB-012", "category": "books", "price": 24.99, "quantity": 1}],
+      "total_amount": 119.97,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Texas",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-004",
+    "customer_name": "David Kim",
+    "customer_email": "d.kim@email.com",
+    "customer_tier": "silver",
+    "ticket_text": "I tried to use the promo code SPRING25 at checkout for 25% off but it says 'invalid code'. I got this code in an email from The Platform yesterday. My cart has $120 worth of clothing items. Please fix this or give me the discount manually.",
+    "order_context": null
+  },
+  {
+    "ticket_id": "TKT-005",
+    "customer_name": "Lisa Thompson",
+    "customer_email": "lisa.t@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "I bought a swimsuit last week but it doesn't fit. I haven't removed the tags or worn it (except to try it on in my room). I'd like to exchange it for a different size. However, I noticed your site says swimwear is non-returnable. But I haven't even worn it outside! This seems unfair.",
+    "order_context": {
+      "order_id": "ORD-2026-44890",
+      "order_date": "2026-03-21",
+      "delivery_date": "2026-03-25",
+      "items": [{"name": "AquaFit One-Piece Swimsuit - Medium", "sku": "CLO-SWM-005M", "category": "swimwear", "price": 59.99, "quantity": 1}],
+      "total_amount": 64.98,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Florida",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-006",
+    "customer_name": "James Wilson",
+    "customer_email": "j.wilson@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "I see charges on my credit card from The Platform for $347.89 and $215.50 but I only placed one order for $347.89. I did NOT make the second purchase. Someone may have hacked my account. Please investigate immediately and refund the unauthorized charge.",
+    "order_context": {
+      "order_id": "ORD-2026-45901",
+      "order_date": "2026-03-26",
+      "delivery_date": null,
+      "items": [{"name": "Wireless Noise-Canceling Headphones", "sku": "ELEC-AUD-020", "category": "electronics", "price": 299.99, "quantity": 1}, {"name": "USB-C Charging Cable 3-Pack", "sku": "ELEC-ACC-110", "category": "accessories", "price": 19.99, "quantity": 1}],
+      "total_amount": 347.89,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Ohio",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-007",
+    "customer_name": "Anna Petrova",
+    "customer_email": "anna.p@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "I placed an order for a winter jacket that's being shipped to Germany. I got charged $189 for the jacket plus $24.99 for international shipping. Now DHL is asking me to pay €32 in customs duties. Nobody told me about extra charges! I want The Platform to cover the customs fees.",
+    "order_context": {
+      "order_id": "ORD-2026-44567",
+      "order_date": "2026-03-18",
+      "delivery_date": null,
+      "estimated_delivery": "2026-03-30",
+      "items": [{"name": "Alpine Pro Winter Jacket", "sku": "CLO-JKT-015", "category": "clothing", "price": 189.00, "quantity": 1}],
+      "total_amount": 213.99,
+      "payment_method": "credit_card",
+      "shipping_method": "international_standard",
+      "shipping_address_country": "DE",
+      "shipping_address_state": "Bavaria",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-008",
+    "customer_name": "Robert Martinez",
+    "customer_email": "r.martinez@email.com",
+    "customer_tier": "gold",
+    "ticket_text": "I bought a blender from a third-party seller called 'KitchenPro Plus' on your marketplace. The blender stopped working after 3 weeks. I contacted the seller through your messaging system 5 days ago and haven't heard back. I want a refund. The listing said it had a 1-year warranty.",
+    "order_context": {
+      "order_id": "ORD-2026-42345",
+      "order_date": "2026-03-01",
+      "delivery_date": "2026-03-05",
+      "items": [{"name": "KitchenPro Ultra Blender 2000W", "sku": "KIT-BLD-045", "category": "small_appliances", "price": 79.99, "quantity": 1}],
+      "total_amount": 84.98,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Arizona",
+      "seller_type": "seller_fulfilled",
+      "seller_name": "KitchenPro Plus"
+    }
+  },
+  {
+    "ticket_id": "TKT-009",
+    "customer_name": "Jennifer Park",
+    "customer_email": "j.park@email.com",
+    "customer_tier": "platinum",
+    "ticket_text": "I want to cancel my order. I placed it about 30 minutes ago. It's a set of furniture — a dining table and 4 chairs totaling $1,250. I just realized I measured wrong and the table won't fit in my dining room.",
+    "order_context": {
+      "order_id": "ORD-2026-46001",
+      "order_date": "2026-03-28",
+      "delivery_date": null,
+      "estimated_delivery": "2026-04-08",
+      "items": [{"name": "Modern Oak Dining Table 72\"", "sku": "FRN-TBL-072", "category": "furniture", "price": 849.99, "quantity": 1}, {"name": "Modern Oak Dining Chair (Set of 4)", "sku": "FRN-CHR-004", "category": "furniture", "price": 399.99, "quantity": 1}],
+      "total_amount": 1249.98,
+      "payment_method": "affirm",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Washington",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-010",
+    "customer_name": "Thomas Brown",
+    "customer_email": "t.brown@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "I bought a face cream from your site. The product arrived and I opened it and used it once, but I had an allergic reaction. I want to return it for a full refund. I know personal care items are supposed to be non-returnable, but this is a health issue.",
+    "order_context": {
+      "order_id": "ORD-2026-45234",
+      "order_date": "2026-03-22",
+      "delivery_date": "2026-03-26",
+      "items": [{"name": "LuxGlow Anti-Aging Face Cream 50ml", "sku": "BEA-CRM-030", "category": "personal_care", "price": 45.99, "quantity": 1}],
+      "total_amount": 50.98,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Massachusetts",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-011",
+    "customer_name": "Michelle Taylor",
+    "customer_email": "m.taylor@email.com",
+    "customer_tier": "silver",
+    "ticket_text": "I see that the wireless earbuds I bought last week for $79.99 are now on sale for $59.99. Can I get the price difference refunded? I still have the earbuds and they're great, I just feel like I overpaid.",
+    "order_context": {
+      "order_id": "ORD-2026-45500",
+      "order_date": "2026-03-22",
+      "delivery_date": "2026-03-24",
+      "items": [{"name": "SoundBuds Pro TWS Earbuds", "sku": "ELEC-AUD-055", "category": "electronics", "price": 79.99, "quantity": 1}],
+      "total_amount": 79.99,
+      "payment_method": "The Platform_wallet",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Colorado",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-012",
+    "customer_name": "Carlos Mendez",
+    "customer_email": "c.mendez@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "I want to know if I can pay with Bitcoin for a gaming PC. Also, if I pay with crypto and need to return it, how does the refund work?",
+    "order_context": null
+  },
+  {
+    "ticket_id": "TKT-013",
+    "customer_name": "Susan Wright",
+    "customer_email": "s.wright@email.com",
+    "customer_tier": "gold",
+    "ticket_text": "I ordered a product on your platform where it said 'Sold by TechGadgets, Fulfilled by The Platform'. The product arrived but it's clearly a counterfeit. The brand logo is spelled wrong and the packaging looks fake. I want a full refund and I want this seller reported.",
+    "order_context": {
+      "order_id": "ORD-2026-45700",
+      "order_date": "2026-03-19",
+      "delivery_date": "2026-03-23",
+      "items": [{"name": "BrandName Wireless Mouse", "sku": "ELEC-MSE-100", "category": "electronics", "price": 34.99, "quantity": 1}],
+      "total_amount": 34.99,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Illinois",
+      "seller_type": "fulfilled_by_The Platform",
+      "seller_name": "TechGadgets"
+    }
+  },
+  {
+    "ticket_id": "TKT-014",
+    "customer_name": "Patricia Lee",
+    "customer_email": "p.lee@email.com",
+    "customer_tier": "platinum",
+    "ticket_text": "My loyalty points balance shows 12,500 points but I made a purchase of $800 last month that should have earned me 2,400 points (3x multiplier for Platinum). My balance should be 14,900. Can you check and fix this?",
+    "order_context": null
+  },
+  {
+    "ticket_id": "TKT-015",
+    "customer_name": "Kevin Murphy",
+    "customer_email": "k.murphy@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "If I'm not satisfied with a purchase, can I get the store to give me a price match from Amazon? They have the same item for $40 less.",
+    "order_context": {
+      "order_id": "ORD-2026-45800",
+      "order_date": "2026-03-25",
+      "delivery_date": "2026-03-27",
+      "items": [{"name": "Smart Home Hub 3rd Gen", "sku": "ELEC-HME-033", "category": "electronics", "price": 129.99, "quantity": 1}],
+      "total_amount": 129.99,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Michigan",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-016",
+    "customer_name": "Amy Chen",
+    "customer_email": "a.chen@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "I ordered a laptop and want it delivered overnight to a PO Box in Alaska. My order total is $1200. The checkout is showing overnight shipping isn't available. Why not?",
+    "order_context": null
+  },
+  {
+    "ticket_id": "TKT-017",
+    "customer_name": "Daniel Foster",
+    "customer_email": "d.foster@email.com",
+    "customer_tier": "gold",
+    "ticket_text": "My phone (purchased 10 months ago from The Platform) has a battery that barely lasts 2 hours now. It used to last all day. The phone has never been dropped or exposed to water. Is this covered under warranty? I have the The Platform extended warranty too.",
+    "order_context": {
+      "order_id": "ORD-2025-38900",
+      "order_date": "2025-05-15",
+      "delivery_date": "2025-05-18",
+      "items": [{"name": "UltraPhone X128 Smartphone", "sku": "ELEC-PHN-128", "category": "electronics", "price": 699.99, "quantity": 1}],
+      "total_amount": 769.98,
+      "payment_method": "credit_card",
+      "shipping_method": "expedited",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Oregon",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-018",
+    "customer_name": "Rachel Green",
+    "customer_email": "r.green@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "I want to return a custom-engraved watch that I ordered. The engraving has a spelling mistake — my name is 'Rachel' but they engraved 'Rachael'. This is their error, not mine. I typed my name correctly in the customization form.",
+    "order_context": {
+      "order_id": "ORD-2026-44100",
+      "order_date": "2026-03-10",
+      "delivery_date": "2026-03-20",
+      "items": [{"name": "Elegance Custom Engraved Watch", "sku": "JWL-WTC-ENG", "category": "customized", "price": 199.99, "quantity": 1}],
+      "total_amount": 199.99,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Nevada",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-019",
+    "customer_name": "Brian Anderson",
+    "customer_email": "b.anderson@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "I'm going to sue The Platform if you don't fix this immediately. I was charged twice for the same order. I've been waiting for 3 days and no one has helped me. This is theft and I'm contacting my lawyer.",
+    "order_context": {
+      "order_id": "ORD-2026-45999",
+      "order_date": "2026-03-25",
+      "delivery_date": null,
+      "items": [{"name": "Fitness Tracker Pro Band", "sku": "ELEC-FIT-050", "category": "electronics", "price": 149.99, "quantity": 1}],
+      "total_amount": 149.99,
+      "payment_method": "credit_card",
+      "shipping_method": "standard",
+      "shipping_address_country": "US",
+      "shipping_address_state": "Georgia",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-020",
+    "customer_name": "Priya Sharma",
+    "customer_email": "p.sharma@email.com",
+    "customer_tier": "silver",
+    "ticket_text": "I placed an order to be shipped to Mumbai, India. I selected standard international shipping. It's been 25 days and the package hasn't arrived. Tracking shows it's been stuck in customs in India for the last 10 days. Can The Platform help clear it from customs?",
+    "order_context": {
+      "order_id": "ORD-2026-43200",
+      "order_date": "2026-03-01",
+      "delivery_date": null,
+      "estimated_delivery": "2026-03-20",
+      "items": [{"name": "Professional DSLR Camera Kit", "sku": "ELEC-CAM-200", "category": "electronics", "price": 549.99, "quantity": 1}],
+      "total_amount": 574.98,
+      "payment_method": "credit_card",
+      "shipping_method": "international_standard",
+      "shipping_address_country": "IN",
+      "shipping_address_state": "Maharashtra",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-021",
+    "customer_name": "Mark Stevens",
+    "customer_email": "m.stevens@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "Can you tell me what data The Platform stores about me? I'm a California resident and I want to exercise my rights under CCPA. Also, I want to opt out of any data sharing for advertising.",
+    "order_context": null
+  },
+  {
+    "ticket_id": "TKT-022",
+    "customer_name": "Natalie Wood",
+    "customer_email": "n.wood@email.com",
+    "customer_tier": "gold",
+    "ticket_text": "I returned a dress 50 days ago and still haven't received my refund. My order was from December 20 (holiday purchase). The return was picked up by the carrier on February 5. I've called 3 times and each time I'm told to wait. This is unacceptable.",
+    "order_context": {
+      "order_id": "ORD-2025-42000",
+      "order_date": "2025-12-20",
+      "delivery_date": "2025-12-24",
+      "items": [{"name": "Velvet Evening Gown - Size 8", "sku": "CLO-DRS-EVN8", "category": "clothing", "price": 189.99, "quantity": 1}],
+      "total_amount": 189.99,
+      "payment_method": "credit_card",
+      "shipping_method": "expedited",
+      "shipping_address_country": "US",
+      "shipping_address_state": "New York",
+      "seller_type": "The Platform_direct"
+    }
+  },
+  {
+    "ticket_id": "TKT-023",
+    "customer_name": "George Phillips",
+    "customer_email": "g.phillips@email.com",
+    "customer_tier": "bronze",
+    "ticket_text": "Do you do same-day delivery in Denver? If so, what's the cutoff time and how much does it cost? Also, can I get same-day delivery for items from marketplace sellers?",
+    "order_context": null
+  }
+]
