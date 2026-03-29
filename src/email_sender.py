@@ -1,5 +1,5 @@
 """
-Email sender utility for the E-commerce Support Resolution Agent.
+Email sender utility for ResolveAI.
 Sends formatted HTML resolution emails to customers via Gmail SMTP.
 """
 

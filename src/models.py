@@ -1,5 +1,5 @@
 """
-Pydantic data models for the E-commerce Support Resolution Agent.
+Pydantic data models for ResolveAI.
 Defines structured inputs and outputs for all agents in the pipeline.
 """
 

@@ -1,1 +1,1 @@
-# E-commerce Support Resolution Agent
+# ResolveAI — Multi-Agent E-commerce Support Pipeline
