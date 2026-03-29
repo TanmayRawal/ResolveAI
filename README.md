@@ -210,6 +210,16 @@ python tests/evaluate.py --max 1
 
 ---
 
+## Deliverables
+
+| Document | Description |
+| :--- | :--- |
+| [**WRITEUP.md**](WRITEUP.md) | 1-page architecture + evaluation summary |
+| [**EXAMPLE_RUNS.md**](EXAMPLE_RUNS.md) | 3 full documented runs: exception, escalation, abstention |
+| [**evaluation_results/**](evaluation_results/) | Full benchmark report — 100% citation & compliance pass rate |
+
+---
+
 ## Project Structure
 
 ```

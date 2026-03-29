@@ -13,8 +13,7 @@ build/
 # Vector store (can be rebuilt)
 data/vectorstore/
 
-# Evaluation results
-evaluation_results/
+# Evaluation results (keep latest report for reference)
 
 # IDE
 .vscode/
