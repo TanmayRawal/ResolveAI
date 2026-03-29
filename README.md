@@ -64,6 +64,25 @@ A production-grade, multi-agent AI system that automatically resolves e-commerce
 
 ---
 
+## UI Preview
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/Screenshot 2026-03-29 163208.png" alt="ResolveAI Dashboard" width="100%" style="border-radius:12px"/>
+      <br/>
+      <sub><b>🖥️ Dashboard</b> — Agent pipeline, currency toggle, system config</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/Screenshot 2026-03-29 163402.png" alt="ResolveAI Resolution Output" width="100%" style="border-radius:12px"/>
+      <br/>
+      <sub><b>✅ Resolution Output</b> — Clean metrics, cited response, policy badges</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## Architecture
 
 ```mermaid
