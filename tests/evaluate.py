@@ -122,6 +122,24 @@ def safe_print(text: str):
         print(text.encode("ascii", errors="replace").decode("ascii"))
 
 
+def clean_field(raw, default="unknown") -> str:
+    """Extract a single clean value from raw multi-line agent output.
+
+    The Triage Agent may return structured text like:
+        'refund\nSUB_CATEGORY: damaged_item\nPRIORITY: medium\n...'
+    This function reduces it to just the first meaningful token: 'refund'.
+    """
+    if not raw:
+        return default
+    first = str(raw).strip().split("\n")[0].strip()
+    for prefix in ["ISSUE_TYPE:", "PRIORITY:", "STATUS:", "TYPE:", "CATEGORY:"]:
+        if first.upper().startswith(prefix):
+            first = first[len(prefix):].strip()
+    first = first.split()[0] if first else default
+    return first.replace("_", " ").title()
+
+
+
 def run_evaluation(
     tickets_path: str = None,
     max_tickets: int = None,
@@ -147,7 +165,7 @@ def run_evaluation(
     settings.validate()
 
     safe_print("=" * 80)
-    safe_print("  E-commerce Support Resolution Agent - Evaluation")
+    safe_print("  ResolveAI - Evaluation Suite")
     safe_print(f"  Model: {settings.LLM_MODEL}")
     safe_print("=" * 80)
     safe_print("")
@@ -236,8 +254,12 @@ def run_evaluation(
         results.append(result)
 
         # Print quick summary
+        issue_clean   = clean_field(result.get("issue_type"))
+        priority_clean = clean_field(result.get("priority"))
         safe_print(
             f"\nResult: {result['compliance_status']} | "
+            f"Issue: {issue_clean} | "
+            f"Priority: {priority_clean} | "
             f"Escalated: {result['requires_escalation']} | "
             f"Citations: {len(result['citations'])} | "
             f"Rewrites: {result['rewrite_count']} | "
@@ -284,9 +306,11 @@ def run_evaluation(
             report_write(f"| {label} | {value}{'%' if 'rate' in key else ''} |\n")
         report_write("\n## Ticket Results\n\n")
         for result in results:
+            issue_clean    = clean_field(result.get("issue_type"))
+            priority_clean = clean_field(result.get("priority"))
             report_write(f"### {result['ticket_id']}\n")
-            report_write(f"- **Issue Type:** {result['issue_type']}\n")
-            report_write(f"- **Priority:** {result['priority']}\n")
+            report_write(f"- **Issue Type:** {issue_clean}\n")
+            report_write(f"- **Priority:** {priority_clean}\n")
             report_write(f"- **Compliance:** {result['compliance_status']}\n")
             report_write(f"- **Escalated:** {result['requires_escalation']}\n")
             report_write(f"- **Citations:** {len(result['citations'])}\n")
