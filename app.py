@@ -868,24 +868,52 @@ with tab3:
         """, unsafe_allow_html=True)
     else:
         for result in reversed(st.session_state.results_history):
-            status = result["compliance_status"]
-            pill = "pill-approved" if status == "approved" else "pill-escalated"
+            status  = (result.get("compliance_status") or "unknown").strip()
+            issue   = clean_field(result.get("issue_type"))
+            priority = clean_field(result.get("priority"))
+            pill    = "pill-approved" if status == "approved" else "pill-escalated"
+            pri_icon = {"Critical": "🔴", "High": "🟠", "Medium": "🟡", "Low": "🟢"}.get(priority, "🔵")
+
             with st.expander(
                 f"**{result['ticket_id']}** — {result.get('customer_name', '—')} — {result['time']}s"
             ):
-                col1, col2 = st.columns([3, 1])
-                with col1:
-                    st.markdown(f"**Issue:** {result['issue_type']} &nbsp;|&nbsp; **Priority:** {result['priority']}")
-                    st.markdown(f"**Email:** {result.get('customer_email','—')}")
-                with col2:
-                    st.markdown(f'<span class="pill {pill}">{status}</span>', unsafe_allow_html=True)
+                # ── 4-column metric row ──
+                h1, h2, h3, h4 = st.columns(4)
+                with h1:
+                    st.metric("🏷️ Issue", issue)
+                with h2:
+                    st.metric(f"{pri_icon} Priority", priority)
+                with h3:
+                    status_icon = "✅" if status == "approved" else "⚠️"
+                    st.metric(f"{status_icon} Compliance", status.capitalize())
+                with h4:
+                    st.metric("⏱️ Time", f"{result['time']}s")
 
-                st.markdown(f"**Response:**\n\n{result['customer_response']}")
+                # ── Email ──
+                st.caption(f"📧 {result.get('customer_email', '—')}")
 
+                # ── Response ──
+                st.markdown('<p class="section-title">Customer Response</p>', unsafe_allow_html=True)
+                resp_html = (result.get("customer_response") or "").replace("\n", "<br>")
+                st.markdown(
+                    f'<div class="glass-panel glass-panel-accent">{resp_html}</div>',
+                    unsafe_allow_html=True,
+                )
+
+                # ── Citations ──
                 if result.get("citations"):
-                    badges = "".join(f'<span class="cite-badge">📎 {c}</span>' for c in result["citations"])
-                    st.markdown(f"**Citations:** {badges}", unsafe_allow_html=True)
+                    st.markdown('<p class="section-title">Policy Citations</p>', unsafe_allow_html=True)
+                    badges = "".join(
+                        f'<span class="cite-badge">📎 {c}</span>' for c in result["citations"]
+                    )
+                    st.markdown(f'<div style="margin:0.3rem 0">{badges}</div>', unsafe_allow_html=True)
 
+                # ── Escalation ──
+                if result.get("requires_escalation"):
+                    st.error(f"⚠️ **Escalated:** {result.get('escalation_reason', '')}")
+
+        st.divider()
         if st.button("🗑️ Clear History", key="clear_hist"):
             st.session_state.results_history = []
             st.rerun()
+
